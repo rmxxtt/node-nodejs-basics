@@ -1,4 +1,4 @@
-import path from 'path'
+import {sep} from 'path'
 import {release, version} from 'os'
 import {createServer as createServerHttp} from 'http'
 import './files/c.js'
@@ -15,7 +15,7 @@ if (random > 0.5) {
 
 console.log(`Release ${release()}`);
 console.log(`Version ${version()}`);
-console.log(`Path segment separator is "${path.sep}"`);
+console.log(`Path segment separator is "${sep}"`);
 
 console.log(`Path to current file is ${import.meta.filename}`);
 console.log(`Path to current directory is ${import.meta.dirname}`);
